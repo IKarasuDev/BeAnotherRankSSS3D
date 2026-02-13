@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctmrhg1q33eag"]
+
+[ext_resource type="PackedScene" uid="uid://bafae8o87xdnv" path="res://assets/3Dmodels/Buildings/Blacksmith.fbx" id="1_tv1t7"]
+
+[node name="Blacksmith" instance=ExtResource("1_tv1t7")]

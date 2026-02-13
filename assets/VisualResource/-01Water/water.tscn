@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://d4gomklhp6gpg"]
+
+[ext_resource type="Shader" uid="uid://dk116yijoyt31" path="res://shaders/water/water.gdshader" id="1_67lvt"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_7tul5"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_67lvt"]
+noise = SubResource("FastNoiseLite_7tul5")
+invert = true
+as_normal_map = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_67lvt"]
+render_priority = 0
+shader = ExtResource("1_67lvt")
+shader_parameter/albedo = Color(0.09773495, 0.26061186, 0.5179647, 0.5921569)
+shader_parameter/albedo_texture_size = Vector2i(0, 0)
+shader_parameter/point_size = 1.0
+shader_parameter/roughness = 0.0
+shader_parameter/metallic_texture_channel = Vector4(1, 0, 0, 0)
+shader_parameter/specular = 0.0
+shader_parameter/metallic = 0.0
+shader_parameter/texture_refraction = SubResource("NoiseTexture2D_67lvt")
+shader_parameter/refraction = 0.05
+shader_parameter/refraction_texture_channel = Vector4(1, 0, 0, 0)
+shader_parameter/texture_normal = SubResource("NoiseTexture2D_67lvt")
+shader_parameter/normal_scale = 1.0
+shader_parameter/uv1_blend_sharpness = 1.0
+shader_parameter/uv1_scale = Vector3(0.4, 0.4, 0.4)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(1, 1, 1)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)
+
+[sub_resource type="BoxMesh" id="BoxMesh_frdcp"]
+material = SubResource("ShaderMaterial_67lvt")
+
+[node name="Water" type="MeshInstance3D"]
+mesh = SubResource("BoxMesh_frdcp")

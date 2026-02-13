@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjulhlcfqt73t"]
+
+[ext_resource type="PackedScene" uid="uid://chp4tbovgv6x7" path="res://assets/3Dmodels/Buildings/Bell_Tower.fbx" id="1_f04dc"]
+
+[node name="Bell_Tower" instance=ExtResource("1_f04dc")]
