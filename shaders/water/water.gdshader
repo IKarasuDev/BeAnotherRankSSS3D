@@ -49,7 +49,7 @@ void vertex() {
 
 	// UV1 Triplanar: Enabled
 	uv1_power_normal = pow(abs(NORMAL), vec3(uv1_blend_sharpness));
-	uv1_triplanar_pos = VERTEX * uv1_scale + uv1_offset + TIME * 0.03;
+	uv1_triplanar_pos = VERTEX * uv1_scale + uv1_offset + TIME * 0.02;
 	uv1_power_normal /= dot(uv1_power_normal, vec3(1.0));
 	uv1_triplanar_pos *= vec3(1.0, -1.0, 1.0);
 }

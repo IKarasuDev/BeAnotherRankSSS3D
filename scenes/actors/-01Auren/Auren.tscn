@@ -2201,7 +2201,7 @@ transform = Transform3D(4, 0, 0, 0, 4.000002, 1.66893e-06, 0, -1.66893e-06, 4.00
 shape = SubResource("CapsuleShape3D_fixdv")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.9998479, -0.017452449, 0, 0.017452449, 0.9998479, 0, 1.624629, 9.862026)
+transform = Transform3D(1, 0, 0, 0, 0.9998479, -0.017452449, 0, 0.017452449, 0.9998479, 0, 0.61316967, 12.172751)
 
 [node name="StateMachine" type="Node" parent="."]
 script = ExtResource("37_ok2fn")
