@@ -37,6 +37,9 @@ transform = Transform3D(0.7, 0, 0, 0, 0.49497473, 0.49497473, 0, -0.49497473, 0.
 walk_speed = 1.0
 run_speed = 3.0
 
+[node name="Camera3D2" type="Camera3D" parent="Auren" index="4"]
+transform = Transform3D(1, 0, 0, 0, 0.9998479, -0.017452449, 0, 0.017452449, 0.9998479, 0, 0.61316967, 12.172751)
+
 [node name="resources" type="Node" parent="." index="2"]
 
 [node name="Water" type="Node" parent="resources" index="0"]

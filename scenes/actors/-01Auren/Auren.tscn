@@ -2187,8 +2187,10 @@ radius = 0.09423828
 height = 0.467875
 
 [node name="Auren" type="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 0.7071067, 0.7071067, 0, -0.7071067, 0.7071067, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.7660443, 0.6427875, 0, -0.6427875, 0.7660443, 0, 0, 0)
 script = ExtResource("1_fixdv")
+walk_speed = 1.0
+run_speed = 3.0
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
@@ -2199,9 +2201,6 @@ animation = &"idle_front"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(4, 0, 0, 0, 4.000002, 1.66893e-06, 0, -1.66893e-06, 4.000002, 0, -0.124077916, 2.9802322e-08)
 shape = SubResource("CapsuleShape3D_fixdv")
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.9998479, -0.017452449, 0, 0.017452449, 0.9998479, 0, 0.61316967, 12.172751)
 
 [node name="StateMachine" type="Node" parent="."]
 script = ExtResource("37_ok2fn")
