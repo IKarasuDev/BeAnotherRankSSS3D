@@ -1,7 +1,7 @@
 [gd_scene load_steps=15 format=3 uid="uid://csxslk7dw37y1"]
 
-[ext_resource type="PackedScene" uid="uid://dct111fqm5swi" path="res://scenes/world/Towns/-01OlidTown/glb/OlidTown.glb" id="1_1c86y"]
-[ext_resource type="PackedScene" uid="uid://lovr8y8huea5" path="res://scenes/actors/-01Auren/Auren.tscn" id="2_soesu"]
+[ext_resource type="PackedScene" uid="uid://dct111fqm5swi" path="res://scenes/World/Towns/-01OlidTown/glb/OlidTown.glb" id="1_1c86y"]
+[ext_resource type="PackedScene" uid="uid://lovr8y8huea5" path="res://scenes/Actors/-01Auren/Auren.tscn" id="2_soesu"]
 [ext_resource type="PackedScene" uid="uid://d4gomklhp6gpg" path="res://assets/VisualResource/-01Water/water.tscn" id="3_rur28"]
 [ext_resource type="PackedScene" uid="uid://byaq57l5lapng" path="res://assets/3Dmodels/props/Trees/-01Pine/Pine.tscn" id="4_7e3hp"]
 [ext_resource type="PackedScene" uid="uid://bogsappux61gq" path="res://assets/3DScenes/house_1.tscn" id="4_el5v6"]
@@ -34,10 +34,8 @@ shape = SubResource("ConcavePolygonShape3D_8061h")
 
 [node name="Auren" parent="." index="1" instance=ExtResource("2_soesu")]
 transform = Transform3D(0.7, 0, 0, 0, 0.49497473, 0.49497473, 0, -0.49497473, 0.49497473, -4.033676, 6.916155, 12.315487)
-walk_speed = 1.0
-run_speed = 3.0
 
-[node name="Camera3D2" type="Camera3D" parent="Auren" index="4"]
+[node name="Camera3D2" type="Camera3D" parent="Auren" index="3"]
 transform = Transform3D(1, 0, 0, 0, 0.9998479, -0.017452449, 0, 0.017452449, 0.9998479, 0, 0.61316967, 12.172751)
 
 [node name="resources" type="Node" parent="." index="2"]

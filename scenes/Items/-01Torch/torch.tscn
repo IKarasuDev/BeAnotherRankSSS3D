@@ -1,0 +1,81 @@
+[gd_scene load_steps=12 format=3 uid="uid://peko8tc73yu4"]
+
+[ext_resource type="Texture2D" uid="uid://ckhay3rrk3a45" path="res://sprites/Items/-01Torch/Torch Animated.png" id="1_4tyva"]
+[ext_resource type="Script" uid="uid://baw5dyfhmpiak" path="res://scenes/Items/-01Torch/torch.gd" id="1_hydte"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hydte"]
+atlas = ExtResource("1_4tyva")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rihnc"]
+atlas = ExtResource("1_4tyva")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cchbu"]
+atlas = ExtResource("1_4tyva")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hswi4"]
+atlas = ExtResource("1_4tyva")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mi4sr"]
+atlas = ExtResource("1_4tyva")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j4xlr"]
+atlas = ExtResource("1_4tyva")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_22030"]
+atlas = ExtResource("1_4tyva")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_526ms"]
+atlas = ExtResource("1_4tyva")
+region = Rect2(192, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bxu4n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hydte")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rihnc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cchbu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hswi4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mi4sr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j4xlr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_22030")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_526ms")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[node name="Torch" type="Node3D"]
+script = ExtResource("1_hydte")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_bxu4n")
+frame_progress = 0.28548414
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+light_color = Color(0.89785576, 0.72043383, 0.5676168, 1)
+omni_range = 7.0

@@ -1,6 +1,6 @@
 [gd_scene load_steps=321 format=3 uid="uid://lovr8y8huea5"]
 
-[ext_resource type="Script" uid="uid://be7dphfmr8gxq" path="res://scenes/actors/-01Auren/scripts/auren.gd" id="1_fixdv"]
+[ext_resource type="Script" uid="uid://be7dphfmr8gxq" path="res://scenes/Actors/-01Auren/scripts/auren.gd" id="1_fixdv"]
 [ext_resource type="Texture2D" uid="uid://coy1evak770yp" path="res://sprites/Actors/-01Auren/ATTACK 2/attack2_up.png" id="2_401kv"]
 [ext_resource type="Texture2D" uid="uid://d0qv01g1mxtg5" path="res://sprites/Actors/-01Auren/ATTACK 2/attack2_down.png" id="3_sqxh8"]
 [ext_resource type="Texture2D" uid="uid://di6eglb4pns1t" path="res://sprites/Actors/-01Auren/ATTACK 2/attack2_left.png" id="4_iaa87"]
@@ -37,7 +37,7 @@
 [ext_resource type="Texture2D" uid="uid://dw0qtd3st2pq" path="res://sprites/Actors/-01Auren/WALK/walk_down.png" id="34_uipdb"]
 [ext_resource type="Texture2D" uid="uid://bscjm7d6hecrv" path="res://sprites/Actors/-01Auren/WALK/walk_left.png" id="35_4m22b"]
 [ext_resource type="Texture2D" uid="uid://baqgbv2x6tfwd" path="res://sprites/Actors/-01Auren/WALK/walk_right.png" id="36_t4efh"]
-[ext_resource type="Script" uid="uid://bmjgen84waii8" path="res://scenes/actors/-01Auren/scripts/state_machine.gd" id="37_ok2fn"]
+[ext_resource type="Script" uid="uid://bmjgen84waii8" path="res://scenes/Actors/-01Auren/scripts/state_machine.gd" id="37_ok2fn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8vcs2"]
 atlas = ExtResource("2_401kv")

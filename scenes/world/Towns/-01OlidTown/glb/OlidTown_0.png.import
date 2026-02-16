@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bybcdedxpm5wv"
-path.s3tc="res://.godot/imported/OlidTown_0.png-ad226252ed4525b43bdf3e4bda512274.s3tc.ctex"
+path.s3tc="res://.godot/imported/OlidTown_0.png-a02b231e3981f20ab3430e49649fcb5b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://scenes/world/Towns/-01OlidTown/glb/OlidTown_0.png"
-dest_files=["res://.godot/imported/OlidTown_0.png-ad226252ed4525b43bdf3e4bda512274.s3tc.ctex"]
+source_file="res://scenes/World/Towns/-01OlidTown/glb/OlidTown_0.png"
+dest_files=["res://.godot/imported/OlidTown_0.png-a02b231e3981f20ab3430e49649fcb5b.s3tc.ctex"]
 
 [params]
 

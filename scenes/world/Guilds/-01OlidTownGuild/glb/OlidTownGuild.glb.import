@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dn6p84si3qig7"
-path="res://.godot/imported/OlidTownGuild.glb-b2a70442caf1ec9fd01713571540f3a0.scn"
+path="res://.godot/imported/OlidTownGuild.glb-80239fd3029767382ff2a659ce18c1b1.scn"
 
 [deps]
 
-source_file="res://scenes/world/Guilds/-01OlidTownGuild/glb/OlidTownGuild.glb"
-dest_files=["res://.godot/imported/OlidTownGuild.glb-b2a70442caf1ec9fd01713571540f3a0.scn"]
+source_file="res://scenes/World/Guilds/-01OlidTownGuild/glb/OlidTownGuild.glb"
+dest_files=["res://.godot/imported/OlidTownGuild.glb-80239fd3029767382ff2a659ce18c1b1.scn"]
 
 [params]
 
