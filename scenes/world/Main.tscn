@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://w282dett6nq7"]
+
+[ext_resource type="Script" uid="uid://c8wqb546571o2" path="res://scenes/World/main.gd" id="1_5neni"]
+[ext_resource type="PackedScene" uid="uid://cr3seofhomntu" path="res://scenes/Insides/-01AurensHouse/aurens_house.tscn" id="2_c8hyh"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_5neni")
+initial_world = ExtResource("2_c8hyh")

@@ -1,7 +1,8 @@
-[gd_scene load_steps=15 format=3 uid="uid://csxslk7dw37y1"]
+[gd_scene load_steps=16 format=3 uid="uid://csxslk7dw37y1"]
 
 [ext_resource type="PackedScene" uid="uid://dct111fqm5swi" path="res://scenes/World/Towns/-01OlidTown/glb/OlidTown.glb" id="1_1c86y"]
 [ext_resource type="PackedScene" uid="uid://lovr8y8huea5" path="res://scenes/Actors/-01Auren/Auren.tscn" id="2_soesu"]
+[ext_resource type="Script" uid="uid://kche6vlq7u45" path="res://singletons/Cameras/follow_camera_3d.gd" id="3_h6meu"]
 [ext_resource type="PackedScene" uid="uid://d4gomklhp6gpg" path="res://assets/VisualResource/-01Water/water.tscn" id="3_rur28"]
 [ext_resource type="PackedScene" uid="uid://byaq57l5lapng" path="res://assets/3Dmodels/props/Trees/-01Pine/Pine.tscn" id="4_7e3hp"]
 [ext_resource type="PackedScene" uid="uid://bogsappux61gq" path="res://assets/3DScenes/house_1.tscn" id="4_el5v6"]
@@ -33,12 +34,14 @@ visible = false
 shape = SubResource("ConcavePolygonShape3D_8061h")
 
 [node name="Auren" parent="." index="1" instance=ExtResource("2_soesu")]
-transform = Transform3D(0.7, 0, 0, 0, 0.49497473, 0.49497473, 0, -0.49497473, 0.49497473, -4.033676, 6.916155, 12.315487)
+transform = Transform3D(0.8, 0, 0, 0, 0.6128356, 0.51423013, 0, -0.51423013, 0.6128356, 21.834, 6.6487117, -1.421)
 
-[node name="Camera3D2" type="Camera3D" parent="Auren" index="3"]
-transform = Transform3D(1, 0, 0, 0, 0.9998479, -0.017452449, 0, 0.017452449, 0.9998479, 0, 0.61316967, 12.172751)
+[node name="Camera_OlidTown" type="Camera3D" parent="." index="2"]
+transform = Transform3D(2, 0, 0, 0, 1.5320889, 1.2855754, 0, -1.2855754, 1.5320889, 21.834, 12.736, 5.225)
+script = ExtResource("3_h6meu")
+target_path = NodePath("../Auren")
 
-[node name="resources" type="Node" parent="." index="2"]
+[node name="resources" type="Node" parent="." index="3"]
 
 [node name="Water" type="Node" parent="resources" index="0"]
 
@@ -412,7 +415,7 @@ debug_color = Color(1, 0, 0, 1)
 [node name="AngelStatue" parent="resources/props" index="0" instance=ExtResource("5_iue0u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48837596, 2.8954296, 0.09847796)
 
-[node name="Buildings" type="Node" parent="." index="3"]
+[node name="Buildings" type="Node" parent="." index="4"]
 
 [node name="Houses" type="Node" parent="Buildings" index="0"]
 
@@ -436,3 +439,6 @@ transform = Transform3D(0.44102648, 0, 0.23557526, 0, 0.5, 0, -0.23557526, 0, 0.
 
 [node name="Sawmill" parent="Buildings/Houses" index="6" instance=ExtResource("8_7e3hp")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -14.389441, 3.0221415, -2.210823)
+
+[node name="FromAurenHouse" type="Marker3D" parent="." index="5"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 21.834475, 6.5331473, -1.4212435)

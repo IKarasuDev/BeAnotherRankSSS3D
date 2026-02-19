@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://elgt1noc74ok"]
+
+[ext_resource type="PackedScene" uid="uid://lrrwvnyikgr2" path="res://assets/3Dmodels/props/KItchen/KitchenKnife.glb" id="1_a363i"]
+
+[node name="KitchenKnife2" instance=ExtResource("1_a363i")]

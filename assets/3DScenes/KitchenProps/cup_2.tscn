@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://knb1pdgpx8an"]
+
+[ext_resource type="PackedScene" uid="uid://darieg148t2ne" path="res://assets/3Dmodels/props/KItchen/Cup.glb" id="1_c6cna"]
+
+[node name="Cup2" instance=ExtResource("1_c6cna")]

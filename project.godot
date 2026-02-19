@@ -11,8 +11,14 @@ config_version=5
 [application]
 
 config/name="Be Another Rank SSS 3D"
+run/main_scene="uid://w282dett6nq7"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GateController="*res://singletons/Gates/GateController.gd"
+WorldManager="*res://singletons/WorldManager/WorldManager.gd"
 
 [file_customization]
 
@@ -22,6 +28,11 @@ folder_colors={
 "res://singletons/": "yellow",
 "res://sprites/": "purple"
 }
+
+[global_group]
+
+Auren=""
+Player=""
 
 [input]
 

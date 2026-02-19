@@ -2186,7 +2186,7 @@ animations = [{
 radius = 0.09423828
 height = 0.467875
 
-[node name="Auren" type="CharacterBody3D"]
+[node name="Auren" type="CharacterBody3D" groups=["Auren", "Player"]]
 transform = Transform3D(1, 0, 0, 0, 0.7660443, 0.6427875, 0, -0.6427875, 0.7660443, 0, 0, 0)
 script = ExtResource("1_fixdv")
 walk_speed = 1.0
