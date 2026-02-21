@@ -2,16 +2,21 @@ extends Node
 
 var root: Node
 var current_world: Node = null
+var transition: CanvasLayer
 
 func setup(main_root: Node):
 	root = main_root
+	transition = root.get_node("Transition")
 
 
 func change_world(world_scene: PackedScene, spawn_name: String):
 
+	if transition:
+		await transition.fade_in(0.8)
+
 	if current_world:
 		current_world.queue_free()
-		await get_tree().process_frame  # 🔥 ESPERAR a que realmente desaparezca
+		await get_tree().process_frame
 
 	current_world = world_scene.instantiate()
 	root.add_child(current_world)
@@ -23,6 +28,9 @@ func change_world(world_scene: PackedScene, spawn_name: String):
 
 	activate_world_camera()
 	print_active_camera()
+
+	if transition:
+		await transition.fade_out(1.5)
 
 
 
